@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+
+kelas publik VariabelTipeData {
+    
+    nama String statis;
+    nilai int statis;
+    sks Integer statis;
+    biaya_sks int akhir statis = 100_000;
+    total_diskon ganda statis;
+    diskon ganda statis;
+    
+    public static void main(String[] args) {
+        
+        Isi Pemindai = Pemindai baru (System.in);
+        System.out.print("Isikan Nama : ");
+        nama = Isi.nextLine();
+        
+        System.out.print("Isi Nilai : ");
+        nilai = Isi.nextInt();
+        
+        System.out.print("Jumlah SKS : ");
+        sks = Isi.nextInt();
+        
+        double total_biaya = sks * biaya_sk;
+        
+        if (total_biaya > 2_000_000){
+            total_diskon = total_biaya - (total_biaya * 0,2);
+            diskon = total_biaya * 0,2;
+        }
+        else if (total_biaya > 1_000_000){
+            total_diskon = total_biaya - (total_biaya * 0,1);
+            diskon = total_biaya * 0,1;
+        }
+        
+        System.out.println("=========================");
+        System.out.println("Nama Anda : " + nama);
+        System.out.println("Nilai Anda : " + nilai);
+        System.out.println("Total Biaya Keseluruhan : " + total_biaya);
+        System.out.println("Jumlah Diskon : " + diskon);
+        System.out.println("Total Bayar : " + total_diskon);
+    }
+    
+}
